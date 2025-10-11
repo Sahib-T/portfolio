@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahib</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <nav id="desktop_nav">
+        <div class="logo"> ST</div>
+        <div>
+            <ul class="nav_links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#exp">Experience</a></li>
+                <li><a href="#projects"> Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="h_nav">
+         <div class="logo">ST</div>
+         <div class="h_menu">
+            <div class="h_icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu_links">
+                <li><a href="#about" onclick="toggleMenu()"> About</a></li>
+                <li><a href="#exp" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()"> Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+            </div>
+         </div>
+    </nav>
+    <section id="profile">
+        <div class="my_image">
+            <img src="./Assets/bmo.jpg" alt="bmo">
+        </div>
+        <div class="section_text">
+            <p class="section_textp1">Hello I'm</p>
+            <h1 class="title"> Sahib</h1>
+            <p class="section_textp2">CS Engineer</p>
+            <div class="btn_container">
+                <button class="btn b1" onclick="window.open('./Assets/resume-example.pdf')">Download CV</button>
+               <button class="btn b2" onclick="location.href ='#contact'">Contact info</button>
+            </div>
+            <div id = "social_container">
+               <img 
+                    src="Assets/linkedin.png" 
+                    alt="linkedin_img" 
+                    class="icon" 
+                    onclick="window.open('https://linkedin.com/')">
+               <img 
+                    src="Assets/github.png" 
+                    alt="github_img" 
+                    class="icon" 
+                    onclick="window.open('https://github.com/Sahib-T')">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_textp1">Get to know more</p>
+        <h1 class="title">About me</h1>
+        <div class="section_container">
+            <div class="my_image">
+                <img src="./Assets/about-pic.png" 
+                alt="me"
+                class="about_pic">
+            </div>
+            <div class="about_detailes_containers">
+                <div class="about_containers">
+                    <div class="detailes_containers">
+                        <img src="./Assets/experience.png" 
+                        alt="experience"
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>1+ year <br>Indie Game Development</p>
+                    </div>
+                    <div class="detailes_containers">
+                        <img src="./Assets/education.png" 
+                        alt="education"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelors of Science[CS]<br>ongoing</p>
+                    </div>    
+                </div>
+                <div class="text_container">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                         Quis ipsam ipsum optio perferendis odit. Consequuntur incidunt nemo perspiciatis suscipit, ipsum, dolore, sint cupiditate impedit inventore nihil perferendis libero hic adipisci quod. Officia corrupti iure ut quidem adipisci quasi non pariatur nesciunt! Dolores eius magni saepe,
+                         quas maiores aliquid facilis aut?</div>
+            </div>
+        </div>
+        <img class="icon arrow" src="Assets/arrow.png" alt="arrow icon" onclick="location.href ='#exp'">
+    </section>
+    <section id="exp">
+        <p class="section_textp1">Explore more</p>
+        <h1 class="title">Experiences</h1>
+        <div class="experience_containers">
+            <div class="experience_details_container">
+                <div class="de1">
+                    <img src="./Assets/checkmark.png" alt="checkmark"
+                    class="icon">
+                    <h3>C++ <br><p>Experienced</p></h3>
+                </div>
+                 <div class="de1">
+                    <img src="./Assets/checkmark.png" alt="checkmark"
+                    class="icon">
+                    <h3>MERN <br><p>Basic</p></h3>
+                </div>
+                <div class="de1">
+                    <img src="./Assets/checkmark.png" alt="checkmark"
+                    class="icon">
+                    <h3>Python <br><p>Basic</p></h3>
+                </div>
+                 <div class="de1">
+                    <img src="./Assets/checkmark.png" alt="checkmark"
+                    class="icon">
+                    <h3>GDscipt <br><p>Basic</p></h3>
+                </div>
+                  <div class="de1">
+                    <img src="./Assets/checkmark.png" alt="checkmark"
+                    class="icon">
+                    <h3>React<br><p>Basic</p></h3>
+                </div>
+                
+                <div class="de1">
+                    <img src="./Assets/checkmark.png" alt="checkmark"
+                    class="icon">
+                    <h3>Git<br><p>Intermediate</p></h3>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section id="contact">
+       <p class="section_textp1">Get in Touch</p>
+        <h1 class="title">With me</h1>
+        <div class="contact_details_container">
+            <div class="contact_details">
+                <img src="./Assets/email.png" 
+                alt="mail"
+                class="icon">
+                  <div class="mail_link" onclick="window.open('mailto:sahibt07@gmail.com')">sahibt07@gmail.com</div>
+            </div>
+        </div>
+        <div class="bottom_nav">
+            <div>
+                <ul class="nav_links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#exp">Experience</a></li>
+                    <li><a href="#projects"> Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>   
+        </div>
+        <p class="cr_text">Copyright © 2025 ST. All Rights Reserved.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
