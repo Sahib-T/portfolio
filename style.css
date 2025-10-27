@@ -348,6 +348,8 @@ section{
     gap: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    text-align: left;
+    /* justify-content: center; */
 }
 
 .experience_details_container{
