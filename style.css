@@ -196,6 +196,7 @@ section{
     border-radius: 50%;
      /* 2. The Scaling: Ensures the image covers the area without stretching */
     object-fit: cover; 
+    border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 
